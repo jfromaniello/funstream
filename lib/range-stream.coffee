@@ -11,13 +11,14 @@ class RangeStream extends stream.Stream
       @emit 'data', @current.toString()
       @current += if @current < @to then 1 else -1
 
+    if @current == @to
+      @emit 'end'
+
   resume: ->
-    @emit 'resume'
     @paused = false
     @_run()
 
   pause: ->
-    @emit 'pause'
     @paused = true
 
 module.exports = RangeStream
