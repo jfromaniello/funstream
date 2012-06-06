@@ -42,14 +42,6 @@ Creates an stream that emits a data event for every number in the range, then en
 funs.range(1, 100).pipe(process.stdout);
 ```
 
-# RangeStream
-
-Creates an stream that emits a data event for every number in the range, then ends
-
-```js
-funs.range(1, 100).pipe(process.stdout);
-```
-
 # DelayStream
 
 The stream emits the data event after an specific amount of milliswcond for every input.

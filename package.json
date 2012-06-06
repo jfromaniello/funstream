@@ -1,0 +1,18 @@
+{
+  "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "name": "funstream",
+  "description": "Functional programming operations for node.js streams.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfromaniello/funstream.git"
+  },
+  "dependencies": {
+    "coffee-script": "~1.3.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
