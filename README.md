@@ -28,8 +28,8 @@ Execute the callback, accumulating in the seed, when the source stream ends emit
 
 ```js
 var aFileStream = fs.createReadStream("foo.txt");
-aFileStream.pipe(funs.reduce( function (total, chunk) { total += chunk.match(/o/g).length; }))
-             .pipe(funs.map( function (total) { return " total amoun of 'o': " + total; }))
+aFileStream.pipe(funs.reduce( function (prev, chunk) { return prev + chunk.match(/o/g).length; }))
+             .pipe(funs.map( function (total) { return " total amount of 'o': " + total; }))
              .pipe(process.stdout);
 ```
 
